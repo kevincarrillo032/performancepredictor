@@ -1,0 +1,12 @@
+# Feature names used by the model
+features:
+  - math_score
+  - reading_score
+  - writing_score
+
+# (Optional) Preprocessing steps (replace with actual steps if used)
+preprocessing:
+  - scaling: standard
+
+# Path to the saved SVC model file
+model_path: svc_model.pkl
