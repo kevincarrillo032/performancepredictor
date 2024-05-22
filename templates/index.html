@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ethnicity Prediction</title>
+</head>
+<body>
+  <h1>Predict Your Ethnicity</h1>
+  <form method="post" action="/predict">
+    <label for="math_score">Math Score:</label>
+    <input type="number" name="math_score" required><br>
+    <label for="reading_score">Reading Score:</label>
+    <input type="number" name="reading_score" required><br>
+    <label for="writing_score">Writing Score:</label>
+    <input type="number" name="writing_score" required><br>
+    <input type="submit" value="Predict">
+  </form>
+  {% if prediction %}
+    <p>Predicted Ethnicity: {{ prediction }}</p>
+  {% endif %}
+</body>
+</html>
+
